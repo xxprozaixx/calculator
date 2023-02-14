@@ -44,7 +44,15 @@ console.log(operate('', 1,2));
 const x = document.querySelector('.multiply');
 x.addEventListener('click',function(){console.log('work')});
 
-const buttons = Array.from(document.querySelectorAll('.button'))
-  .filter(button => button.className === 'button');
+const buttons = document.querySelectorAll('.button:not(.reset)');
+const screen = document.getElementById('screen');
 
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      screen.innerText += button.innerText;
+      screen.style.textAlign = 'right'; // Align text to right
+    screen.style.padding = '0'; // Add some padding to the text
+    });
+  });
+console.log(screen);
 console.log(buttons);
