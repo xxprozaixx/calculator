@@ -31,6 +31,7 @@ body
     align-items: center;
     justify-content: center;
     gap: 10px;;
+    padding: 20px;
 }
 
 #screen
@@ -42,6 +43,9 @@ body
     margin-top: 25px;
     background-color: rgb(228, 228, 228);
     border-radius: 3px;
+    padding: 15px;
+    overflow: hidden;
+    white-space: pre-wrap;
 }
 
 .buttons-area
@@ -50,10 +54,11 @@ body
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 15px;
 }
 
 .button
